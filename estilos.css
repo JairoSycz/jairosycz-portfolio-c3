@@ -21,9 +21,15 @@
 	padding: 0px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 	max-width: 1920px;
 	overflow-x: hidden;
+	display: flex;
+	justify-content: center;
 }
 
 /* Header */
@@ -38,6 +44,7 @@ body {
 	align-items: center;
 	font-family: "gotham-book";
 	background-color: transparent;
+	text-transform: uppercase;
 	top: 0;
 	z-index: 1000;
 	
@@ -68,7 +75,9 @@ body {
 	border-radius: 16px;
 	background: #FFF;
 	text-decoration: none;
+	
 }
+
 
 .conoce_mas_de_mi:hover {
 	color: #FFFFFF;
@@ -100,6 +109,128 @@ main {
 
 .portada {
 	max-width: 1920px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 23px 0px;
+	justify-content: center;
+	height: 90vh;
+}
+
+.texto_portada {
+	max-width: 1920px;
+	display: flex;
+	position: relative;
+	top: 190px;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hola {
+	display: flex;
+	color: #991312;
+	font-family: "gotham-book";
+	width: 100%;
+    justify-content: center;
+	
+}
+
+.botones_portada {
+	display: flex;
+	position: relative;
+	top: 500px;
+	justify-content: center;
+}
+
+.ul_botones {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "gotham-bold";
+	text-transform: uppercase;
+	width: 100%;
+	padding: 0;
+}
+
+.ul_botones li {
+	width: 80vh;
+	display: flex;
+	justify-content: center;
+	max-width: 1920px;
+
+}
+
+
+.diseniador, .ilustrador {
+
+	color: #991312;
+	padding: 10px 33px;
+	border-radius: 16px;
+	background: #FFF;
+	text-decoration: none;
+	white-space: nowrap;
+	position: relative;
+}
+
+.diseniador::after {
+	content: "Mis trabajos como diseñador";
+    position: absolute;
+	left: -50%;
+	top: 0;
+	box-sizing: border-box;
+    padding: 10px 33px;
+    border-radius: 16px;
+    background: #991312;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+}
+
+.diseniador:hover::after {
+    opacity: 1;
+	transform: scale(1.1);
+}
+
+.diseniador:hover {
+    color: transparent;
+	transform: scale(1.1);
+}
+
+.ilustrador::after {
+	content: "Mis trabajos como ilustrador";
+    position: absolute;
+	left: -50%;
+	top: 0;
+	box-sizing: border-box;
+    padding: 10px 33px;
+    border-radius: 16px;
+    background: #991312;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+}
+
+.ilustrador:hover::after {
+    opacity: 1;
+	transform: scale(1.1);
+}
+
+.ilustrador:hover {
+    color: transparent;
+	transform: scale(1.1);
 }
 
 .foto_portada {
@@ -112,5 +243,66 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
+
+
+/* fin de portada */
+
+/* inicio de texto */
+
+
+.texto-e-imagen {
+	padding: 140px 0px 100px 0px;
+	display: flex;
+	flex-direction: row;
+	height: 973px;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	max-width: 1920px;
+}
+
+.texto_sobre_mi {
+	display: block;
+	color: #991312;
+	font-family: "gotham-book";
+	font-size: 32px;
+	line-height: 52px;
+	width: 50%;
+} 
+
+/* fin de texto */
+
+/* inicio de footer */
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background: #991312;
+	padding: 27px 0px;
+	position: fixed;
+	bottom: 0;
+}
+
+.ul_footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.redes_sociales {
+	color: #FFF;
+	text-align: center;
+	font-family: "Oferta do Dia";
+	font-size: 36px;
+	font-style: normal;
+}
+
+
+
+
+
