@@ -326,6 +326,44 @@ main {
 	font-size: 100px;
 }
 
+/* fin de diseño */
+
+/* inicio de ilustracion */
+
+.portada_ilustracion {
+	max-width: 1920px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 23px 0px;
+	justify-content: center;
+	height: 90vh;
+}
+
+.foto_portada_ilustracion {
+	background-image: url(".img/portadailustraciones.jpg");
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.titulo_ilustracion {
+	font-family: "Oferta-do-dia";
+	color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 500px;
+	font-size: 100px;
+}
+
+
 /* inicio de footer */
 
 
