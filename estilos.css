@@ -22,14 +22,12 @@
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
 	max-width: 1920px;
-	overflow-x: hidden;
-	display: flex;
-	justify-content: center;
+	display: block;
 }
 
 
@@ -117,31 +115,28 @@ body {
 /* inicio main - portada */
 
 main {
-	height: 100%;
-	max-width: 1920px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
 }
 
 .portada {
-	max-width: 1920px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 23px 0px;
-	justify-content: center;
-	height: 90vh;
+ 	display: flex;
+    justify-content: center;
+    height: 90vh;
+    background: url(img/img_portadab.jpg) center center / cover;
+    padding-bottom: 100px;
+    width: 100%;
+    padding-top: 135px;
 }
 
 .texto_portada {
-	max-width: 1920px;
 	display: flex;
-	position: relative;
-	top: 190px;
 	flex-direction: column;
-	align-items: center;
+	gap: 500px;
+	width: 100%;
 }
 
 .hola {
@@ -153,29 +148,18 @@ main {
 	
 }
 
-.botones_portada {
-	display: flex;
-	position: relative;
-	top: 500px;
-	justify-content: center;
-}
 
 .ul_botones {
-	list-style: none;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	font-family: "gotham-bold";
 	text-transform: uppercase;
-	width: 100%;
-	padding: 0;
 }
 
 .ul_botones li {
 	width: 80vh;
 	display: flex;
 	justify-content: center;
-	max-width: 1920px;
 
 }
 
@@ -187,15 +171,17 @@ main {
 	border-radius: 16px;
 	background: #FFF;
 	text-decoration: none;
-	white-space: nowrap;
 	position: relative;
+	transition: transform 0.5s ease;
+	transform-origin: center;
 }
 
 .diseniador::after {
 	content: "Mis trabajos como diseñador";
     position: absolute;
-	left: -50%;
+	left: 50%;
 	top: 0;
+	transform: translateX(-50%);
 	box-sizing: border-box;
     padding: 10px 33px;
     border-radius: 16px;
@@ -209,11 +195,13 @@ main {
     opacity: 0;
     transition: opacity 0.5s ease, transform 0.5s ease;
     pointer-events: none;
+	white-space:nowrap;
 }
 
 .diseniador:hover::after {
     opacity: 1;
-	transform: scale(1.1);
+	transform: translateX(-50) scale(1.1);
+	
 }
 
 .diseniador:hover {
@@ -224,8 +212,9 @@ main {
 .ilustrador::after {
 	content: "Mis trabajos como ilustrador";
     position: absolute;
-	left: -50%;
+	left: 50%;
 	top: 0;
+	transform: translateX(-50%);
 	box-sizing: border-box;
     padding: 10px 33px;
     border-radius: 16px;
@@ -239,11 +228,12 @@ main {
     opacity: 0;
     transition: opacity 0.5s ease, transform 0.5s ease;
     pointer-events: none;
+	white-space:nowrap;
 }
 
 .ilustrador:hover::after {
     opacity: 1;
-	transform: scale(1.1);
+	transform: translateX(-50) scale(1.1);
 }
 
 .ilustrador:hover {
@@ -251,17 +241,7 @@ main {
 	transform: scale(1.1);
 }
 
-.foto_portada {
-	background-image: url(".img/img_portadab.jpg");
-	background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100vw; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 
 /* fin de portada */
@@ -270,14 +250,13 @@ main {
 
 
 .texto-e-imagen {
-	padding: 140px 0px 100px 0px;
-	display: flex;
-	flex-direction: row;
-	height: 973px;
-	justify-content: space-between;
-	align-items: center;
-	width: 90%;
-	max-width: 1920px;
+	padding:100px 0px 100px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    gap: 2%;
+    box-sizing: border-box;
 }
 
 .texto_sobre_mi {
@@ -294,87 +273,189 @@ main {
 /* inicio de diseño */
 
 .portada_disenio {
-	max-width: 1920px;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 23px 0px;
-	justify-content: center;
-	height: 90vh;
+    justify-content: center;
+    height: 90vh;
+    background: url("img/portadadiseño1.jpg") center center / cover;
+    width: 100%;
+    padding-top: 10%;
 }
 
-.foto_portada_disenio {
-	background-image: url(".img/portadadiseño1.jpg");
-	background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100vw; 
+.texto_portada_disenio {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding-top: 8%;
+    width: 100%;
+	align-items: center;
 }
+
 
 .titulo_disenio {
 	font-family: "Oferta-do-dia";
 	color: #FFFFFF;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	top: 500px;
-	font-size: 100px;
+	font-size: 10em;
+	text-decoration: none;
 }
+
+.titulo_disenio:hover {
+	font-family: "Oferta-do-dia";
+	color: #991312;
+	font-size: 10em;
+}
+
+.texto_disenio {
+	color: #FFF;
+	font-family: "gotham-book";
+	font-size: 32px;
+	width: 50%;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.section_trabajos_disenio {
+	display: flex;
+	flex-direction: column;
+	padding: 100px 0px;
+	width: 100%;
+	align-items: center;
+}
+
+.texto_e_imagen_one, .texto_e_imagen_igle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	padding: 50px 0px;
+    width: 96%;
+    gap: 3%;
+    box-sizing: border-box;
+}
+
+.texto_one, .texto_igle {
+	display: block;
+	color: #991312;
+	font-family: "gotham-book";
+	font-size: 28px;
+	line-height: 48px;
+	width: 42%;
+}
+
+.texto_one, .texto_igle p {
+	padding-top: 30px;
+}
+
+/* inicio de carrusel one */
+
+.slider_box {
+	max-width: 1195px;
+	height: auto;
+	overflow: hidden;
+}
+
+.slider_box ul {
+	display: flex;
+	padding: 0;
+	width: 500%;
+	animation: slide 15s infinite ease-in-out;
+}
+
+
+.slider_box li {
+	width: 100%;
+	list-style: none;
+	position: relative;
+}
+
+@keyframes slide {
+	0% {margin-left: 0; }
+	10% {margin-left: 0; }
+	
+	20% {margin-left: -100%; }
+	30% {margin-left: -100%; }
+	
+	40% {margin-left: -200%; }
+	50% {margin-left: -200%; }
+	
+	60% {margin-left: -300%; }
+	70% {margin-left: -300%; }
+	
+	80% {margin-left: -400%; }
+	90% {margin-left: -400%; }
+	
+	100% {margin-left: -500%; }
+	100% {margin-left: -500%; }
+	
+}
+
+/* inicio de carrusel igle */
+
+.slider_box_igle {
+	max-width: 1195px;
+	height: auto;
+	overflow: hidden;
+}
+
+.slider_box_igle ul {
+	display: flex;
+	padding: 0;
+	width: 600%;
+	animation: slide 15s infinite ease-in-out;
+}
+
+
+.slider_box_igle li {
+	width: 16.66%;
+	list-style: none;
+	position: relative;
+}
+	
 
 /* fin de diseño */
 
 /* inicio de ilustracion */
 
 .portada_ilustracion {
-	max-width: 1920px;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 23px 0px;
-	justify-content: center;
-	height: 90vh;
-}
-
-.foto_portada_ilustracion {
-	background-image: url(".img/portadailustraciones.jpg");
-	background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100vw; 
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-
+    height: 90vh;
+    background: url("img/portadailustraciones.jpg")center center / cover;
+    width: 100%;
+    padding-top: 10%;
 }
+
+.texto_portada_ilustracion {
+	display: flex;
+    flex-direction: column;
+    padding-top: 8%;
+    width: 100%;
+	align-items: center;
+}
+
 .titulo_ilustracion {
 	font-family: "Oferta-do-dia";
 	color: #FFFFFF;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	top: 500px;
-	font-size: 100px;
+	font-size: 10em;
+}
+
+.texto_ilustracion {
+	color: #FFF;
+	font-family: "gotham-book";
+	font-size: 32px;
+	width: 50%;
+	text-align: center;
+	padding-top: 20px;
 }
 
 
 /* inicio de footer */
 
 
-/*footer {
+footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 	width: 100%;
 	background: #991312;
-	padding: 27px 0px;
-	bottom: 0;
 }
 
 .ul_footer {
@@ -382,6 +463,9 @@ main {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	width: 90%;
+	list-style: none;
+	padding: 27px 0px;
 	
 }
 
@@ -391,11 +475,61 @@ main {
 	font-family: "Oferta do Dia";
 	font-size: 36px;
 	font-style: normal;
-}*/
+}
 
+.ul_footer a {
+	position: relative;
+	display: inline-block;
+}
 
+.ul_footer img {
+	background-color: #991312;
+	padding: 10px;
+	border-radius: 16px;
+	display: block;
+	transition: opacity 0.3s ease-in-out;
+}
 
+.ul_footer a img.hover {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	background-color: #FFFFFF;
+	transition: opacity 0.3s ease-in-out;
+}
 
+.ul_footer a:hover img.hover {
+	opacity: 1;
+}
 
+.ul_footer a:hover img.normal {
+	opacity: 0;
+}
 
+.segundo_footer {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFFFFF;
+	padding: 25px 0px;
+}
 
+.volvemos_arriba {
+	color: #991312;
+	padding: 10px 33px;
+	border-radius: 16px;
+	background: #FFF;
+	text-decoration: none;
+	font-family: "gotham-book";
+	text-transform: uppercase;
+}
+
+.volvemos_arriba:hover {
+	color: #FFFFFF;
+	padding: 10px 33px;
+	border-radius: 16px;
+	background: #991312;
+	transition:0.5s ease;
+}
