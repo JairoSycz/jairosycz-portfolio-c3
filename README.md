@@ -1,3 +1,6 @@
 # jairosycz-portfolio-c3
 
-Estuve luchando con las posiciones de las cosas. Algo que se me hace raro es que no sé como poner el footer bien en su lugar, no quiero que esté fixed, pero si no lo pongo así se va hacia el costado de la página
+Me gustó mucho hacer este trabajo, ojalá haber tenído más tiempo. Pude mejorar bastante con respecto al anterior.
+Mi pantalla es de 1920x1080px
+Usé DreamWeaver
+Figma: https://www.figma.com/design/2h8u4DyjUJg9p8LE8Z4PuC/Portfolio-Syczjario?m=auto&t=jnbVErxtOOaWz2BB-6
