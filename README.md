@@ -4,3 +4,5 @@ Me gustó mucho hacer este trabajo, ojalá haber tenído más tiempo. Pude mejor
 Mi pantalla es de 1920x1080px
 Usé DreamWeaver
 Figma: https://www.figma.com/design/2h8u4DyjUJg9p8LE8Z4PuC/Portfolio-Syczjario?m=auto&t=jnbVErxtOOaWz2BB-6
+
+Hice @media en los navs, footer, en todo el índex menos la imagen portada y en otras portadas
